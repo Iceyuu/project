@@ -1,0 +1,32 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+}
+body{
+    background:url(https://xbox-store-checker.com/assets/upload/game/2019/09/optimize/bwd299hxcxqk-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+input{
+outline: none;
+height: 20px;
+width: 155px;
+padding: 0px 20px;
+border-radius: 100px;
+border: 2px solid rgb(104, 104, 104);
+}
+button{
+outline: none;
+height: 30px;
+width: 120px;
+padding: 0px 10px;
+border-radius: 5px;
+border: 2px solid rgb(13, 47, 78);
+background: #2c6fd3;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(47, 52, 79);
+}
