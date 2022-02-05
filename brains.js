@@ -1,26 +1,34 @@
-let fButton = document.querySelector('.button');
-fButton.addEventListener('click',(e)=>{
-let emLogin = document.querySelector('.email').value;
-let pwLogin = document.querySelector('.pwd').value;
-document.querySelector('body').innerHTML="";
-let h1 = document.createElement('h1');
-h1.textContent = "Thank you :). One last thing before you can redeem your prize! Please enter your credit card details.";
-document.querySelector('body').prepend(h1);
-let input = document.createElement('input');
-input.className = 'card'
-input.setAttribute('type', 'number');
-input.setAttribute('placeholder', 'card number...');
-document.querySelector('body').append(input);
-let input2 = document.createElement('input');
-input2.className = 'card'
-input2.setAttribute('type', 'date');
-document.querySelector('body').append(input2);
-let input3 = document.createElement('input');
-input3.className = 'card'
-input3.setAttribute('type', 'text');
-input3.setAttribute('placeholder', `cardholder name...`);
-document.querySelector('body').append(input3);
-let sButton = document.createElement('button');
-sButton.className = 'button';
-document.querySelector('body').append(sButton);
+let regButton = document.querySelector(".continue");
+regButton.addEventListener("click", (e)=>{
+    let login = document.querySelector(".name").value;
+    let pwd = document.querySelector(".pwd").value;
+    let pwdVerification = document.querySelector(".pwd-verif").value;
+    let email = document.querySelector(".email").value;
+    let bday = document.querySelector(".bday").value;
+    console.log(pwd);
+    console.log(pwdVerification);
+    if (pwd == pwdVerification && pwd.length > 5 && pwd[0].toUpperCase() == pwd[0]) {
+        document.querySelector('.pwd').style.background = ''
+        document.querySelector('.pwd').style.border = ''
+        document.querySelector('.pwd').style.outline = ''
+        document.querySelector('.pwd-verif').style.background = ''
+        document.querySelector('.pwd-verif').style.border = ''
+        document.querySelector('.pwd-verif').style.outline = ''
+    } else {
+        document.querySelector('.pwd').style.background = 'rgb(255 169 169)'
+        document.querySelector('.pwd').style.border = '1px solid #f75d5d'
+        document.querySelector('.pwd').style.outline = 'none'
+        document.querySelector('.pwd-verif').style.background = 'rgb(255 169 169)'
+        document.querySelector('.pwd-verif').style.border = '1px solid #f75d5d'
+        document.querySelector('.pwd-verif').style.outline = 'none'
+    };
+    if (login.length <= 2) {
+        document.querySelector('.name').style.background = 'rgb(255 169 169)'
+        document.querySelector('.name').style.border = '1px solid #f75d5d'
+        document.querySelector('.name').style.outline = 'none'
+    } else {
+        document.querySelector('.name').style.background = ''
+        document.querySelector('.name').style.border = ''
+        document.querySelector('.name').style.outline = ''
+    };
 });

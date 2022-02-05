@@ -1,32 +1,60 @@
-*{
-    /* padding: 0;
-    margin: 0; */
-}
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
 body{
-    background:url(https://xbox-store-checker.com/assets/upload/game/2019/09/optimize/bwd299hxcxqk-background.jpg);
+    background-color: rgb(211, 208, 208);
+}
+.register{
+    background-color: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
     align-items: center;
-    height: 40vh;
+    height: 100%;
+    padding: 20px 30px;
+    box-shadow: 4px 10px 24px 4px gainsboro;
+    margin: 30px auto;
 }
-input{
-outline: none;
-height: 20px;
-width: 155px;
-padding: 0px 20px;
-border-radius: 100px;
-border: 2px solid rgb(104, 104, 104);
+.register-info{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-button{
-outline: none;
-height: 30px;
-width: 120px;
-padding: 0px 10px;
-border-radius: 5px;
-border: 2px solid rgb(13, 47, 78);
-background: #2c6fd3;
+h2{
+    font-family: 'Poppins', sans-serif;
 }
-h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(47, 52, 79);
+.register-info input{
+    margin-bottom: 10px;
+    min-width: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.404);
+    font-size: 19px;
+    padding: 3px 3px;
+    border-radius: 4px;
+    transition: .3s;
+}
+.register-info input:hover{
+    font-size: 20px;
+    border-bottom: 1px solid black;
+}
+.register-info input::placeholder{
+    padding-left: 6px;
+}
+.continue{
+    background-color: rgb(221, 204, 204);;
+    border: 1px solid rgba(122, 114, 114, 0.363);
+    border-radius: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.gender-inputs{
+    display: flex;
+    font-size: 20px;
+}
+.female-gender{
+    margin: 10px;
+}
+.male-gender{
+    margin: 10px;
 }
